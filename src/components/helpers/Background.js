@@ -6,7 +6,7 @@ import left from 'assets/left1.svg';
 import top from 'assets/top1.svg';
 import right from 'assets/right1.svg';
 const Wrapper = styled.div`
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100vh;
   z-index: -1;
@@ -23,6 +23,7 @@ const Left = styled.img`
 const Right = styled.img`
   position: absolute;
   right: 0;
+  top: 100px;
 `;
 const Bottom = styled.img`
   position: absolute;

@@ -9,6 +9,7 @@ export const theme = {
     green: '#34BF11',
     red: '#E01A1A',
     black: '#000',
+    white: '#fff',
   },
   font: {
     navButton: '16px',
