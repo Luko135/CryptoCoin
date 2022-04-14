@@ -21,5 +21,7 @@ a,button{
     font-family: 'Montserrat', sans-serif; 
 
 }
-
+p{
+    margin: 5px;
+}
 `;
