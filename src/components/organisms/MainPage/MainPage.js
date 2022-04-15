@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Coins from 'assets/coins.svg';
+import { Title } from 'components/atoms/Title/Title';
+import { Name } from 'components/Name/Name';
 
 //TODO układ kart
 const Wrapper = styled.div`
@@ -16,12 +18,6 @@ const Right = styled.div`
   grid-column: 2/2;
   margin-top: 100px;
   position: relative;
-`;
-const Title = styled.h1`
-  margin: 10px 0;
-  padding-left: 15%;
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: ${({ theme }) => theme.font.styledTitle};
 `;
 const SubTitle = styled.h3`
   padding-left: 15%;
@@ -54,14 +50,6 @@ const CardInfo = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   height: 50%;
 `;
-const Name = styled.p`
-  color: ${({ theme, big }) => (big ? theme.colors.white : theme.colors.grey)};
-  font-size: ${({ theme, big }) =>
-    big ? theme.font.coinName : theme.font.coinInfo};
-  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
-  width: ${({ big }) => (big ? '70%' : 'unset')};
-  padding-left: ${({ big }) => (big ? '30px' : 'unset')};
-`;
 const Price = styled.p`
   font-weight: bold;
   font-size: ${({ theme }) => theme.font.price};
@@ -84,7 +72,7 @@ const MainPage = () => {
   return (
     <Wrapper>
       <Left>
-        <Title>Follow the most popular crypto coins. </Title>
+        <Title Left>Follow the most popular crypto coins. </Title>
         <SubTitle>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
           Massa ut massa velit quisque tempor.

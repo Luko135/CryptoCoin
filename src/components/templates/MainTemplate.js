@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Background from 'components/helpers/Background';
 import Navigation from 'components/molecules/Navigation/Navigation';
-
+//TODO background 2
 const Wrapper = styled.div`
   height: 100vh;
   z-index: 1;
