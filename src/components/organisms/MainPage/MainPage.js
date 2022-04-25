@@ -1,73 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
 import Coins from 'assets/coins.svg';
 import { Title } from 'components/atoms/Title/Title';
-import { Name } from 'components/Name/Name';
+import { Name } from 'components/atoms/Name/Name';
+import {
+  Card,
+  CardInfo,
+  CoinsIMG,
+  CryptoIcon,
+  Info,
+  Left,
+  Main,
+  Price,
+  Right,
+  SpecialInfo,
+  SubTitle,
+  Wrapper,
+} from './MainPage.style';
 
 //TODO układ kart
-const Wrapper = styled.div`
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`;
-const Left = styled.div`
-  grid-column: 1/1;
-  margin-top: 100px;
-`;
-const Right = styled.div`
-  grid-column: 2/2;
-  margin-top: 100px;
-  position: relative;
-`;
-const SubTitle = styled.h3`
-  padding-left: 15%;
-  color: ${({ theme }) => theme.colors.lightPrimary};
-  font-size: ${({ theme }) => theme.font.subtitleText};
-`;
-const CoinsIMG = styled.img`
-  padding: 7% 18%;
-`;
-
-const Card = styled.div`
-  width: 300px;
-  height: 350px;
-  border-radius: 15px;
-  border: 1px solid ${({ theme }) => theme.colors.lightGrey};
-  overflow: hidden;
-`;
-const Main = styled.div`
-  height: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 10px;
-  background-color: ${({ theme }) => theme.colors.grey};
-`;
-const CardInfo = styled.div`
-  font-weight: bold;
-  padding: 10px;
-  color: ${({ theme }) => theme.colors.grey};
-  background-color: ${({ theme }) => theme.colors.white};
-  height: 50%;
-`;
-const Price = styled.p`
-  font-weight: bold;
-  font-size: ${({ theme }) => theme.font.price};
-  color: ${({ theme }) => theme.colors.white};
-  width: 100%;
-  text-align: center;
-`;
-const Info = styled.p`
-  width: 100%;
-  text-align: justify;
-`;
-const SpecialInfo = styled.span`
-  color: ${({ theme, secondary }) =>
-    secondary ? theme.colors.secondary : theme.colors.primary};
-`;
-const CryptoIcon = styled.img`
-  width: 30%;
-`;
 const MainPage = () => {
   return (
     <Wrapper>
