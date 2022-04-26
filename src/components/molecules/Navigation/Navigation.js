@@ -8,10 +8,10 @@ const Navigation = () => {
       <img src="#" alt="logo" />
       <Nav>
         <NavigationList>
-          <Link>All Coins</Link>
-          <Link>Best & Worst</Link>
-          <Link>NFT</Link>
-          <Link>New Coins</Link>
+          <Link to="/all">All Coins</Link>
+          <Link to="/">Best & Worst</Link>
+          <Link to="/">NFT</Link>
+          <Link to="/">New Coins</Link>
           <Button>Register</Button>
           <Button isSecondary>LogIn</Button>
         </NavigationList>

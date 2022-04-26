@@ -1,16 +1,21 @@
 import { GlobalStyle } from 'assets/styles/GlobalStyles';
 import { theme } from 'assets/styles/Theme';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Root from './Root';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Root />
-    </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Root />
+      </ThemeProvider>
+    </Router>
+  </React.StrictMode>
 );

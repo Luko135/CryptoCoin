@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Header = styled.header`
@@ -22,7 +23,7 @@ export const NavigationList = styled.ul`
   align-items: center;
   list-style: none;
 `;
-export const Link = styled.li`
+export const Link = styled(NavLink)`
   font-weight: bold;
   font-size: ${({ theme }) => theme.font.navLink};
   color: ${({ theme }) => theme.colors.primary};
